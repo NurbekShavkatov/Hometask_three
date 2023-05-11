@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 800px;
+    height: 650px;
+    background-color: rgb(19, 17, 17);
+}
+.first{
+    position: absolute;
+    top: 500px;
+    left: 30px;
+   font-size: 120px;
+   font-weight: 800;
+   color: blueviolet;
+   animation-name: first;
+   animation-duration: 1s;
+}
+.second{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    font-size: 120px;
+    font-weight: 800;
+    color: rgb(226, 43, 208);
+    animation-name: second;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+ }
+ .third{
+    position: absolute;
+    top: 500px;
+    left: 270px;
+    font-size: 120px;
+    font-weight: 800;
+    color: rgb(205, 226, 43);
+    animation-name: third;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+ }
+ .fourth{
+    position: absolute;
+    top: 500px;
+    left: 390px;
+    font-size: 120px;
+    font-weight: 800;
+    color: rgb(43, 186, 226);
+    animation-name: fourth;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+ }
+ .fifth{
+    position: absolute;
+    top: 500px;
+    left: 510px;
+     font-size: 120px;
+     font-weight: 800;
+     color: rgb(43, 226, 134);
+     animation-name: fifth;
+     animation-duration: 1s;
+     animation-delay: 1.2s;
+  }
+  .six{
+    position: absolute;
+    top: 500px;
+    left: 630px;
+     font-size: 120px;
+     font-weight: 800;
+     color: rgb(84, 20, 143);
+     animation-name: six;
+     animation-duration: 1s;
+     animation-delay: 1.5s;
+  }
+
+  @keyframes first{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  @keyframes second{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  @keyframes third{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  @keyframes fourth{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  @keyframes fifth{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  @keyframes six{
+    0%
+    {
+        position: absolute;
+        top: 20px;   
+    }
+    60%
+    {
+        position: absolute;
+        top: 500px;   
+    }
+    70%
+    {
+        position: absolute;
+        top: 450px;    
+    }
+    80%{
+        position: absolute;
+        top: 500px;   
+    }
+    90%{
+        position: absolute;
+        top: 470px;   
+    }
+    100%{
+        position: absolute;
+        top: 500px;   
+    }
+  }
+  
+
