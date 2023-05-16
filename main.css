@@ -1,259 +1,150 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: antiquewhite;
 }
 .container{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
     width: 800px;
-    height: 650px;
-    background-color: rgb(19, 17, 17);
+    height: 600px;
+    background-color: #F2E4DB;
+    display: flex;
 }
-.first{
+.day{
     position: absolute;
-    top: 500px;
-    left: 30px;
-   font-size: 120px;
-   font-weight: 800;
-   color: blueviolet;
-   animation-name: first;
-   animation-duration: 1s;
+    width: 320px;
+    height: 160px;
+    left: 240px;
+    top: 220px;
+    background: radial-gradient(149.38% 149.38% at 50% 50%, #01D9F6 0%, #02D2F6 18.66%, #00B5E4 48.58%, #016596 100%);
+    border-radius: 160px;
+    overflow: hidden;
 }
-.second{
+.sun{
     position: absolute;
-    top: 500px;
-    left: 150px;
-    font-size: 120px;
-    font-weight: 800;
-    color: rgb(226, 43, 208);
-    animation-name: second;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
- }
- .third{
+    width: 88px;
+    height: 88px;
+    border-radius:44px;
+    left: -10px;
+    top: -40px;
+    background: radial-gradient(86.36% 86.36% at 43.18% 46.59%, #FFD1A4 0%, #FFBF82 28.13%, #F5AE69 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 16px -6px 120px rgba(255, 227, 145, 0.8), 0px 8px 50px #FFE18A, inset 0px 8px 40px #FDCE72;
+    filter: blur(1px);
+}
+.cloud_one{
     position: absolute;
-    top: 500px;
-    left: 270px;
-    font-size: 120px;
-    font-weight: 800;
-    color: rgb(205, 226, 43);
-    animation-name: third;
-    animation-duration: 1s;
-    animation-delay: 0.6s;
- }
- .fourth{
+    width: 64.09px;
+    height: 43.26px;
+    left: 21px;
+    top: 66px;
+    border-radius: 40px;
+    background-color: white;
+   
+}
+.cloud_two{
     position: absolute;
-    top: 500px;
-    left: 390px;
-    font-size: 120px;
-    font-weight: 800;
-    color: rgb(43, 186, 226);
-    animation-name: fourth;
-    animation-duration: 1s;
-    animation-delay: 0.9s;
- }
- .fifth{
+    width: 64.09px;
+    height: 43.26px;
+    left: 71px;
+    top: 26px;
+    border-radius: 40px;
+    background-color: white;  
+}
+.cloud_three{
     position: absolute;
-    top: 500px;
-    left: 510px;
-     font-size: 120px;
-     font-weight: 800;
-     color: rgb(43, 226, 134);
-     animation-name: fifth;
-     animation-duration: 1s;
-     animation-delay: 1.2s;
-  }
-  .six{
+    width: 64.09px;
+    height: 43.26px;
+    left: 91px;
+    top: 76px;
+    border-radius: 40px;
+    background-color: white;  
+}
+.top{
     position: absolute;
-    top: 500px;
-    left: 630px;
-     font-size: 120px;
-     font-weight: 800;
-     color: rgb(84, 20, 143);
-     animation-name: six;
-     animation-duration: 1s;
-     animation-delay: 1.5s;
-  }
+    width: 72.41px;
+    height: 40.93px;
+    left: 193.3px;
+    top: 14px;
+    background: linear-gradient(115.43deg, #F2454B 28.26%, #E4373D 78.61%);
+    box-shadow: inset 2px 1px 4px rgba(255, 172, 172, 0.16), inset -1px -1px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 3.14815px;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+}
+.middle1{
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    left: 193px;
+    top: 57px;
+    background-color: rgb(205, 192, 192);
+    border-radius: 20px;
+}
+.middle2{
+    position: absolute;
+    width: 74.38px;
+    height: 25.19px;
+    left: 192.12px;
+    top: 90.39px;
+    background: #E83B41;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 3.14815px;
+}
+.middle3{
+    position: absolute;
+    width: 74.38px;
+    height: 25.19px;
+    left: 192.12px;
+    top: 119.39px;
+    background: #f0eeee;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 3.14815px;
+}
+.middle4{
+    position: absolute;
+    width: 74.38px;
+    height: 25.19px;
+    left: 192.12px;
+    top: 148px;
+    background: #E83B41;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 3.14815px;
+}
 
-  @keyframes first{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  @keyframes second{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  @keyframes third{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  @keyframes fourth{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  @keyframes fifth{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  @keyframes six{
-    0%
-    {
-        position: absolute;
-        top: 20px;   
-    }
-    60%
-    {
-        position: absolute;
-        top: 500px;   
-    }
-    70%
-    {
-        position: absolute;
-        top: 450px;    
-    }
-    80%{
-        position: absolute;
-        top: 500px;   
-    }
-    90%{
-        position: absolute;
-        top: 470px;   
-    }
-    100%{
-        position: absolute;
-        top: 500px;   
-    }
-  }
-  
-
+.wrapper{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: #00121C;
+}
+.night{
+    position: absolute;
+    width: 320px;
+    height: 160px;
+    left: 240px;
+    top: 220px;
+    background: radial-gradient(149.38% 149.38% at 50% 50%, #7d8485 0%, #555f61 18.66%, #646b6d 48.58%, #5a5f61 100%);
+    border-radius: 160px;
+    overflow: hidden;
+}
+.moon{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    border-radius:44px;
+    left: 250px;
+    top: -40px;
+    background: radial-gradient(86.36% 86.36% at 43.18% 46.59%, #e6dfd9 0%, #f3efec 28.13%, #f3efeb 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 16px -6px 120px rgba(212, 210, 206, 0.8), 0px 8px 50px #e9e8e4, inset 0px 8px 40px #f1f0ec;
+    filter: blur(1px);
+}
+/* .light{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 290px;
+    top: 286px;
+    
+    background: #FFFFFF;
+    opacity: 0.6;
+    filter: blur(4px);
+} */
